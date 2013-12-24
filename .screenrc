@@ -1,0 +1,15 @@
+term screen-256color
+
+escape ^Tt
+
+defscrollback 8000
+
+hardstatus string "%?%h%:%t (screen #%n on %H)%?"
+caption always "%{=r dd}%-Lw%40L>%?%F%{=b dR}%:[%? %n%f %t %?%F%{-}%:]%?%+Lw%?%F%-024=GNU Screen of Git master%:%=%?"
+
+sorendition "+rb .G"
+
+startup_message off
+
+altscreen on
+termcapinfo xterm* ti@:te@
